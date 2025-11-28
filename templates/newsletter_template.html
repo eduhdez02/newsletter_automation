@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DAUCH — Newsletter</title>
+<style>
+  :root{
+    --blue:#00006B;
+    --soft:#CCCCE1;
+    --bg:#ffffff;
+    --muted:#222;
+    --card-bg:#fbfdff;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--muted);}
+  .container{max-width:900px;margin:0 auto;padding:30px;}
+  header{display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #f0f0f2;}
+  .logo{width:100px;height:auto;object-fit:contain}
+  .title{font-size:20px;color:var(--blue);font-weight:700;margin:0}
+  .date{color:#666;font-size:13px;margin-top:4px}
+  .lead{margin:20px 0 28px;font-size:15px;color:#444}
+  .section{margin:18px 0;padding:18px;background:var(--card-bg);border-radius:10px;box-shadow:0 1px 0 rgba(0,0,0,0.03);}
+  .section h3{margin:0 0 10px;font-size:16px;color:var(--blue)}
+  .bullet{margin:10px 0;padding:0;font-size:14px;line-height:1.45}
+  a.link{color:var(--blue);text-decoration:none;font-weight:600}
+  footer{margin-top:26px;padding-top:8px;border-top:1px solid #f0f0f2;color:#777;font-size:13px;text-align:center}
+  @media (max-width:600px){
+    .container{padding:20px}
+    .logo{width:56px}
+    .title{font-size:18px}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./assets/logo.png" alt="DAUCH" class="logo" />
+      <div>
+        <div class="title">DAUCH — Newsletter</div>
+        <div class="date">{{ date }}</div>
+      </div>
+    </header>
+
+    <p class="lead">Noticias y análisis sobre drones, LiDAR, GPR, fotogrametría e IA — enfoque en tecnología, empresas de servicios y tendencias para consultoría.</p>
+
+    <div class="section" id="summary">
+      <h3>Resumen ejecutivo</h3>
+      <div class="bullet">{{ summary_exec }}</div>
+    </div>
+
+    <!-- Últimas noticias -->
+    <div class="section" id="latest-news">
+      <h3>Últimas noticias</h3>
+      {% for n in news %}
+        <div class="bullet" style="margin-bottom:14px;">
+          <div style="font-weight:700;margin-bottom:6px;">{{ n.title }}</div>
+          <div style="color:#333;margin-bottom:6px;">{{ n.summary }}</div>
+          {% if n.source_link %}
+            <div style="font-size:13px;color:#666;">Fuente: <a class="link" href="{{ n.source_link }}" target="_blank" rel="noopener noreferrer">{{ n.source_name or n.source_link }}</a>{% if n.published %} — {{ n.published[:10] }}{% endif %}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="section" id="tech">
+  <h3>Tecnología y Equipos</h3>
+  {% for item in tech %}
+    <div class="bullet" style="margin-bottom:12px;">
+      <div style="font-weight:700;">{{ item.text }}</div>
+      {% if item.source_link %}
+        <div style="font-size:13px;color:#666;margin-top:6px;">Fuente: <a class="link" href="{{ item.source_link }}" target="_blank" rel="noopener noreferrer">{{ item.source_name or item.source_link }}</a></div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+
+    <div class="section" id="services">
+      <h3>Empresas y Servicios Geoespaciales</h3>
+      {% for e in companies %}
+        <div class="bullet" style="margin-bottom:12px;">
+          <strong>{{ e.name }}</strong> ({{ e.country }}) — <em>{{ e.service }}</em>.
+          {% if e.product_or_method %} <div style="margin-top:6px;color:#333">{{ e.product_or_method }}</div>{% endif %}
+          {% if e.note %} <div style="color:#666;margin-top:6px;">{{ e.note }}</div>{% endif %}
+          {% if e.link %}<div style="font-size:13px;color:#666">Fuente: <a class="link" href="{{ e.link }}" target="_blank">{{ e.link }}</a></div>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+<div class="section" id="trends">
+  <h3>Tendencias, Regulación & IA</h3>
+  {% for t in trends %}
+    <div class="bullet" style="margin-bottom:12px;">
+      <div>{{ t.text }}</div>
+      {% if t.source_link %}
+        <div style="font-size:13px;color:#666;margin-top:6px;">Fuente: <a class="link" href="{{ t.source_link }}" target="_blank" rel="noopener noreferrer">{{ t.source_name or t.source_link }}</a></div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+
+    <div class="section" id="rec">
+      <h3>Recomendación DAUCH</h3>
+      <div class="bullet">{{ recommendation }}</div>
+    </div>
+
+    <footer>Generado por DAUCH</footer>
+  </div>
+</body>
+</html>

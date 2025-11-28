@@ -1,0 +1,100 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2025-11-28",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones en drones y tecnología de mapeo, destacando la importancia de la precisión y la autonomía en operaciones geoespaciales.",
+  "news": [
+    {
+      "title": "El primer dron 360 de DJI recibe aprobación de la FCC",
+      "summary": "DJI ha logrado obtener la aprobación de la FCC para su dron Avata 360 justo antes de una posible prohibición en EE. UU. Este avance es crucial para la compañía, ya que busca mantener su presencia en el mercado estadounidense a pesar de las restricciones.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/11/28/dji-avata-360-drone-fcc/",
+      "published": "2025-11-28"
+    },
+    {
+      "title": "Nueva plataforma de receptor GNSS mejora la precisión del mapeo",
+      "summary": "InTerra SmarTarget® ha lanzado una plataforma que optimiza los flujos de trabajo de alta precisión para mapeadores de drones comerciales. Esta tecnología es esencial para mejorar la eficiencia y la exactitud en el trabajo geoespacial.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2025/11/26/new-gnss-receiver-platform-boosts-mapping-accuracy-and-efficiency-a-case-study/",
+      "published": "2025-11-26"
+    },
+    {
+      "title": "Dron suicida Shahed-3 revela partes estadounidenses",
+      "summary": "Las Fuerzas Armadas de Ucrania han capturado un dron suicida Shahed-3, que incluye su cámara y otros componentes. Este hallazgo destaca la complejidad de la tecnología utilizada en conflictos modernos y su implicación en la seguridad nacional.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/11/28/captured-russian-shahed-3-reveals-us-parts/",
+      "published": "2025-11-28"
+    },
+    {
+      "title": "Relanzamiento de The UAV Digest: eVTOLs y Drones",
+      "summary": "El podcast The UAV Digest ha sido relanzado como UAV News Talk, con nuevos coanfitriones que discuten sobre la evolución de los drones y la tecnología eVTOL. Este cambio promete ofrecer una nueva perspectiva sobre el futuro de la aviación.",
+      "source_name": "The UAV Digest",
+      "source_link": "https://theuavdigest.com/429-the-uav-digest-relaunch-evtols-drones-and-the-future-of-flight/",
+      "published": "2025-11-28"
+    },
+    {
+      "title": "Sensor de visión THz de Teradar avanza en autonomía",
+      "summary": "Teradar ha recaudado $150 millones para comercializar el primer sensor de visión terahertz (THz) del mundo. Esta tecnología busca cerrar la brecha de percepción que dejan los sensores tradicionales, mejorando la autonomía de los drones en diversas condiciones.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/teradar-thz-vision-sensor/",
+      "published": "2025-11-28"
+    },
+    {
+      "title": "Modelos digitales costeros Lidar muestran playas estables",
+      "summary": "A pesar de las preocupaciones públicas sobre la erosión costera, los modelos digitales costeros generados por Lidar indican que el ancho promedio de las playas de California se ha mantenido notablemente estable, lo que es un alivio para las comunidades costeras.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/lidar-coastal-digital-models/",
+      "published": "2025-11-28"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Plataforma GNSS de InTerra mejora la precisión en mapeo.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2025/11/26/new-gnss-receiver-platform-boosts-mapping-accuracy-and-efficiency-a-case-study/"
+    },
+    {
+      "text": "Sensor de visión THz de Teradar para autonomía en drones.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/teradar-thz-vision-sensor/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones",
+      "product_or_method": "Dron Avata 360",
+      "note": "Aprobación de la FCC antes de posible prohibición en EE. UU.",
+      "link": "https://dronedj.com/"
+    },
+    {
+      "name": "InTerra",
+      "country": "EE. UU.",
+      "service": "Tecnología de mapeo",
+      "product_or_method": "SmarTarget®",
+      "note": "Mejora la precisión y eficiencia en mapeo.",
+      "link": "https://dronelife.com/"
+    },
+    {
+      "name": "Teradar",
+      "country": "EE. UU.",
+      "service": "Sensores",
+      "product_or_method": "Sensor de visión THz",
+      "note": "Primera tecnología de su tipo para mejorar la autonomía.",
+      "link": "https://lidarnews.com/"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Aumento en la adopción de tecnologías de drones en operaciones militares.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/"
+    },
+    {
+      "text": "Estabilidad de las playas a pesar de la erosión costera reportada.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/"
+    }
+  ],
+  "recommendation": "Priorizar la integración de tecnologías de mapeo de alta precisión en operaciones de drones."
+}
