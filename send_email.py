@@ -10,7 +10,7 @@ import sys
 ROOT = Path(__file__).parent.resolve()
 NEWS_DIR = ROOT / "output" / "newsletters"
 
-# Leer variables de entorno (en GitHub Actions las definirás como secrets/env)
+# Leer variables de entorno (en GitHub Actions las definirás como secrets/env)#
 SMTP_HOST = os.getenv("SMTP_HOST")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
 SMTP_USER = os.getenv("SMTP_USER")
