@@ -1,4 +1,4 @@
-# send_email.py
+# send_email.py (inicio) - reemplaza las variables de entorno por este bloque
 import os
 import smtplib
 import ssl
@@ -10,18 +10,21 @@ import sys
 ROOT = Path(__file__).parent.resolve()
 NEWS_DIR = ROOT / "output" / "newsletters"
 
-# Leer variables de entorno (en GitHub Actions las definirás como secrets/env)#
-SMTP_HOST = os.getenv("SMTP_HOST")
+# Leer variables de entorno (compatibiliza SMTP_PASS y SMTP_PASSWORD)
+SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
 SMTP_USER = os.getenv("SMTP_USER")
-SMTP_PASS = os.getenv("SMTP_PASS")  # app password o API key
+# aceptar ambos nombres de secret para mayor compatibilidad
+SMTP_PASS = os.getenv("SMTP_PASS") or os.getenv("SMTP_PASSWORD")
 FROM_EMAIL = os.getenv("FROM_EMAIL", SMTP_USER)
+FROM_NAME = os.getenv("FROM_NAME", "DAUCH")  # aparece como "DAUCH <email>"
 RECEIVERS = os.getenv("RECEIVERS", "")  # coma-separados
 SUBJECT_PREFIX = os.getenv("SUBJECT_PREFIX", "DAUCH — Newsletter")
 
 if not SMTP_HOST or not SMTP_USER or not SMTP_PASS:
-    print("Faltan variables SMTP en el entorno (SMTP_HOST/SMTP_USER/SMTP_PASS). Abortando.")
+    print("Faltan variables SMTP en el entorno (SMTP_HOST/SMTP_USER/SMTP_PASS o SMTP_PASSWORD). Abortando.")
     sys.exit(1)
+
 
 def find_latest_html():
     files = sorted(NEWS_DIR.glob("newsletter_*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
@@ -46,7 +49,7 @@ def send_html_email(html_path, recipients):
     subject = f"{SUBJECT_PREFIX} · {date_str}"
 
     msg = EmailMessage()
-    msg["From"] = FROM_EMAIL
+    msg["From"] = f"{FROM_NAME} <{FROM_EMAIL}>"
     msg["To"] = ", ".join(recipients)
     msg["Subject"] = subject
     msg.set_content(html_to_text(html_path) or "Adjunto: newsletter HTML")

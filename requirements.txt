@@ -1,0 +1,6 @@
+beautifulsoup4
+feedparser
+requests
+openai
+python-dotenv
+lxml
