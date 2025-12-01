@@ -1,0 +1,87 @@
+name: Send DAUCH Newsletter
+
+on:
+  schedule:
+    # 1 y 16 del mes a las 15:00 UTC (09:00 America/Merida si merida = UTC-6)
+    - cron: '0 15 1,16 * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-send-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || true
+          pip install jinja2 python-dotenv feedparser beautifulsoup4 python-dateutil openai || true
+
+      - name: Run summarizer to build newsletter HTML
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RSS_FEEDS: ${{ secrets.RSS_FEEDS }}
+        run: |
+          python summarizer.py
+
+      - name: Send email with newsletter
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          # accept both secret names to be flexible
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          RECEIVERS: ${{ secrets.RECEIVERS }}
+          SUBJECT_PREFIX: "DAUCH — Newsletter"
+        run: |
+          python send_email.py
+
+      - name: Deploy latest newsletter to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
+        run: |
+          set -e
+          OUTPUT_DIR="output/newsletters"
+          latest_html=$(ls -t $OUTPUT_DIR/newsletter_*.html 2>/dev/null | head -n 1 || true)
+          if [ -z "$latest_html" ]; then
+            echo "No se encontró HTML generado. Abortando deploy."
+            exit 0
+          fi
+          echo "Latest HTML: $latest_html"
+          # preparar trabajo en carpeta temporal
+          rm -rf gh-pages || true
+          git clone --branch gh-pages "https://github.com/${{ github.repository }}" gh-pages || mkdir -p gh-pages
+          # copiar HTML y assets
+          cp -f "$latest_html" gh-pages/index.html
+          if [ -d "$OUTPUT_DIR/assets" ]; then
+            mkdir -p gh-pages/assets
+            cp -r "$OUTPUT_DIR/assets/"* gh-pages/assets/ || true
+          fi
+          # si CUSTOM_DOMAIN está definido, crear CNAME
+          if [ -n "${CUSTOM_DOMAIN}" ]; then
+            echo "${CUSTOM_DOMAIN}" > gh-pages/CNAME
+          fi
+          pushd gh-pages
+          git init
+          git checkout -B gh-pages || true
+          git add -A
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git commit -m "Publish newsletter: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" gh-pages
+          popd
