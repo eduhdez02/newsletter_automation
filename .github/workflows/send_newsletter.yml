@@ -2,7 +2,7 @@ name: Send DAUCH Newsletter
 
 on:
   schedule:
-    # 1 y 16 del mes a las 15:00 UTC (09:00 America/Merida si merida = UTC-6)
+    # 1 y 16 del mes a las 15:00 UTC (09:00 UTC-6)
     - cron: '0 15 1,16 * *'
   workflow_dispatch: {}
 
@@ -12,71 +12,52 @@ permissions:
 jobs:
   build-send-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
+    steps:
+      # 1️⃣ Clonar repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # 3️⃣ Dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt || true
-          pip install jinja2 python-dotenv feedparser beautifulsoup4 python-dateutil openai || true
+          pip install jinja2 python-dotenv feedparser beautifulsoup4 python-dateutil openai lxml || true
 
-      - name: Run summarizer to build newsletter HTML
+      # 4️⃣ Generar newsletter HTML
+      - name: Generate newsletter HTML
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RSS_FEEDS: ${{ secrets.RSS_FEEDS }}
         run: |
           python summarizer.py
 
-      - name: Send email with newsletter
+      # 5️⃣ Enviar correo (solo link)
+      - name: Send email with newsletter link
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
-          # accept both secret names to be flexible
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          FROM_NAME: ${{ secrets.FROM_NAME }}
           RECEIVERS: ${{ secrets.RECEIVERS }}
           SUBJECT_PREFIX: "DAUCH — Newsletter"
         run: |
           python send_email.py
 
-      - name: Deploy latest newsletter to gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -e
-          OUTPUT_DIR="output/newsletters"
-          latest_html=$(ls -t $OUTPUT_DIR/newsletter_*.html 2>/dev/null | head -n 1 || true)
-          if [ -z "$latest_html" ]; then
-            echo "No se encontró HTML generado. Abortando deploy."
-            exit 0
-          fi
-          echo "Latest HTML: $latest_html"
-          # preparar trabajo en carpeta temporal
-          rm -rf gh-pages || true
-          git clone --branch gh-pages "https://github.com/${{ github.repository }}" gh-pages || mkdir -p gh-pages
-          # copiar HTML y assets
-          cp -f "$latest_html" gh-pages/index.html
-          if [ -d "$OUTPUT_DIR/assets" ]; then
-            mkdir -p gh-pages/assets
-            cp -r "$OUTPUT_DIR/assets/"* gh-pages/assets/ || true
-          fi
-          pushd gh-pages
-          git init
-          git checkout -B gh-pages || true
-          git add -A
-          git config user.email "actions@github.com"
-          git config user.name "github-actions[bot]"
-          git commit -m "Publish newsletter: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
-          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" gh-pages
-          popd
+      # 6️⃣ Publicar en GitHub Pages (gh-pages)
+      - name: Deploy newsletter to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: output/newsletters
+          keep_files: false
