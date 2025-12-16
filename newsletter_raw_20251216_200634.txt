@@ -1,0 +1,105 @@
+{
+  "title": "Actualización de Drones y Tecnología",
+  "date": "2025-12-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones en drones y su impacto en diversas industrias, incluyendo la salud y la regulación de su uso.",
+  "news": [
+    {
+      "title": "DJI lanza una actualización masiva de firmware",
+      "summary": "DJI ha implementado una amplia serie de actualizaciones de firmware en su ecosistema de drones empresariales, mejorando las herramientas de inteligencia artificial, flujos de trabajo automatizados más flexibles y una integración más profunda entre dispositivos. Esto promete optimizar las operaciones para los usuarios de drones en sectores industriales.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/",
+      "published": "2025-12-15"
+    },
+    {
+      "title": "Pescadores de Texas luchan por cambiar leyes sobre drones",
+      "summary": "Un grupo de pescadores de surf en Texas está presionando para la revisión de una ley federal que prohíbe el uso de drones para lanzar cebos y atraer peces. Este cambio podría revolucionar la forma en que se pesca en la costa, permitiendo métodos más eficientes y modernos.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/texas-surf-fishermen-fight-to-change-drone-drop-bait-laws/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Demostración de enjambre de drones de múltiples fabricantes",
+      "summary": "Auterion ha realizado la primera demostración en vivo de un enjambre de drones híbridos, combinando drones FPV y de ala fija. Este avance representa un paso significativo hacia la autonomía en operaciones militares modernas, mostrando el potencial de los drones en estrategias de combate.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/auterion-performs-worlds-first-multi-manufacturer-swarm-strike-demonstration/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Drones médicos mejoran la logística de salud rural",
+      "summary": "Un programa piloto en Traverse City ha demostrado cómo los drones pueden reducir el tiempo de transporte y mejorar la fiabilidad en la entrega de suministros médicos en áreas rurales. Este avance podría transformar la atención médica en comunidades aisladas.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Relanzamiento del podcast The UAV Digest",
+      "summary": "Max Flight y David Vanderhoof han relanzado el podcast The UAV Digest, ahora conocido como UAV News Talk. En este episodio, discuten las últimas tendencias en eVTOLs y drones, así como el futuro de la aviación, ofreciendo una nueva perspectiva sobre la industria.",
+      "source_name": "The UAV Digest",
+      "source_link": "https://theuavdigest.com/429-the-uav-digest-relaunch-evtols-drones-and-the-future-of-flight/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Irán recibe el dron suicida Hadid-110",
+      "summary": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán ha recibido el Hadid-110, un nuevo dron suicida con propulsión a chorro diseñado para penetrar en sistemas de defensa modernos. Este desarrollo marca un avance significativo en la capacidad militar de Irán.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/irans-islamic-revolutionary-guard-takes-delivery-of-hadid-110-irans-new-jet-powered-stealth-suicide-drone/",
+      "published": "2025-12-16"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Actualización de firmware de DJI mejora la inteligencia artificial en drones.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/"
+    },
+    {
+      "text": "Demostración de enjambre de drones híbridos por Auterion.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/auterion-performs-worlds-first-multi-manufacturer-swarm-strike-demonstration/"
+    },
+    {
+      "text": "Drones médicos mejoran la logística de salud rural.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones empresariales",
+      "product_or_method": "Firmware actualizado",
+      "note": "Mejora en herramientas de IA y flujos de trabajo.",
+      "link": "https://dji.com"
+    },
+    {
+      "name": "Auterion",
+      "country": "Estados Unidos",
+      "service": "Tecnología de drones",
+      "product_or_method": "Enjambre de drones híbridos",
+      "note": "Avance en operaciones militares autónomas.",
+      "link": "https://auterion.com"
+    },
+    {
+      "name": "Dronelife",
+      "country": "Estados Unidos",
+      "service": "Medios de comunicación sobre drones",
+      "product_or_method": "",
+      "note": "Cobertura de innovaciones en drones.",
+      "link": "https://dronelife.com"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Aumento en el uso de drones para la entrega de suministros médicos.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/"
+    },
+    {
+      "text": "Desarrollo de drones suicidas en el contexto militar.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/irans-islamic-revolutionary-guard-takes-delivery-of-hadid-110-irans-new-jet-powered-stealth-suicide-drone/"
+    }
+  ],
+  "recommendation": "Priorizar la integración de drones en la logística de salud rural y explorar el uso de enjambres en operaciones militares."
+}
