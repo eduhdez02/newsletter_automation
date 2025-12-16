@@ -764,6 +764,12 @@ def main():
     try:
         out = render_html_from_struct(parsed, html_path)
         print("3) HTML generado en:", out)
+        
+    # Forzar index.html para GitHub Pages
+        index_path = OUTPUT_DIR / "index.html"
+        shutil.copyfile(html_path, index_path)
+        print("✓ index.html generado para GitHub Pages")
+
     except Exception as e:
         print("Error al renderizar HTML:", e)
         print("Texto bruto guardado en:", raw_txt_path)
