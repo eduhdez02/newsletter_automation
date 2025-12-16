@@ -1,0 +1,92 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2025-12-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones y regulaciones en el ecosistema de drones, destacando avances tecnológicos y cambios legislativos que impactan a la industria.",
+  "news": [
+    {
+      "title": "DJI lanza una actualización masiva de firmware para drones empresariales",
+      "summary": "DJI ha implementado una amplia serie de actualizaciones de firmware en su ecosistema empresarial, introduciendo herramientas de inteligencia artificial más inteligentes, flujos de trabajo automatizados más flexibles y una integración más profunda entre sus productos. Esto promete mejorar la eficiencia y la funcionalidad de los drones en diversas aplicaciones comerciales.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/",
+      "published": "2025-12-15"
+    },
+    {
+      "title": "Pescadores de Texas luchan por cambiar leyes sobre el uso de drones para cebar",
+      "summary": "Un grupo de pescadores de surf en Texas está presionando para la revisión de una ley federal que prohíbe el uso de drones para lanzar cebos y atraer peces. Argumentan que esta práctica podría mejorar la pesca y beneficiar a la comunidad local, pero se enfrentan a desafíos legales y regulatorios.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/texas-surf-fishermen-fight-to-change-drone-drop-bait-laws/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Un nuevo grado en drones en el Reino Unido crea un canal militar que EE. UU. no tiene",
+      "summary": "Mientras el gobierno de EE. UU. debate cómo manejar su 'problema de drones', el Reino Unido ha anunciado un nuevo programa académico que prepara a los estudiantes para carreras en el sector militar de drones. Este enfoque podría proporcionar a Gran Bretaña una ventaja estratégica en tecnología de drones frente a EE. UU.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/16/uk-drone-degree-creates-military-pipeline-us-doesnt-have/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Un piloto de entrega médica con drones revela logísticas de atención médica rural",
+      "summary": "Un programa piloto en Traverse City ha demostrado cómo los drones pueden reducir el tiempo de transporte y mejorar la fiabilidad en la entrega de suministros médicos en áreas rurales. Este avance podría transformar la atención médica en comunidades desatendidas, facilitando el acceso a tratamientos urgentes.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Relaunch de The UAV Digest: eVTOLs, drones y el futuro del vuelo",
+      "summary": "Max Flight y David Vanderhoof han regresado al podcasting con el relanzamiento de The UAV Digest, ahora rebranded como UAV News Talk. En este episodio, discuten las últimas tendencias en eVTOLs y drones, así como su impacto en la industria de la aviación.",
+      "source_name": "The UAV Digest",
+      "source_link": "https://theuavdigest.com/429-the-uav-digest-relaunch-evtols-drones-and-the-future-of-flight/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Ucrania afirma que un dron submarino dañó un submarino ruso de $500 millones",
+      "summary": "El Servicio de Seguridad de Ucrania (SBU) ha anunciado un hito significativo en la guerra de drones: el primer ataque de un dron submarino contra un submarino. Este evento marca un avance en la guerra moderna y plantea nuevas preguntas sobre la seguridad naval.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/15/ukraine-underwater-drone-russian-submarine/",
+      "published": "2025-12-15"
+    }
+  ],
+  "tech": [
+    {
+      "text": "DJI introduce herramientas de inteligencia artificial más avanzadas en su actualización de firmware.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/"
+    },
+    {
+      "text": "El VZ-600i de RIEGL avanza en el mapeo 3D de ríos en Europa.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/press-releases/3d-river-mapping-lidar-vz-600i/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones empresariales",
+      "product_or_method": "Actualización de firmware",
+      "note": "Mejora la funcionalidad y eficiencia de los drones.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "RIEGL",
+      "country": "Austria",
+      "service": "Escaneo láser",
+      "product_or_method": "VZ-600i",
+      "note": "Avanza en el mapeo 3D de ríos.",
+      "link": "https://www.riegl.com"
+    }
+  ],
+  "trends": [
+    {
+      "text": "La legislación sobre el uso de drones para cebar en Texas está siendo revisada.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/texas-surf-fishermen-fight-to-change-drone-drop-bait-laws/"
+    },
+    {
+      "text": "El nuevo grado en drones en el Reino Unido podría cambiar el panorama militar.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/16/uk-drone-degree-creates-military-pipeline-us-doesnt-have/"
+    }
+  ],
+  "recommendation": "Ej: Considerar la implementación de drones en la logística de atención médica rural."
+}
