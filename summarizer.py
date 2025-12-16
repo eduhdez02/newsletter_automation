@@ -27,8 +27,16 @@ from fetch_news import fetch_news
 
 load_dotenv()
 
-# Config
-OPENAI_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+# Configuración
+# --------------------------------------------------
+OPENAI_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_KEY:
+    raise RuntimeError(
+        "❌ OPENAI_API_KEY no está definida. "
+        "Configúrala en .env (local) o en GitHub Secrets (Actions)."
+    )
+
 ROOT = Path(__file__).parent.resolve()
 TEMPLATE_DIR = ROOT / "templates"
 OUTPUT_DIR = ROOT / "output" / "newsletters"
