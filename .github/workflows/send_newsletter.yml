@@ -53,7 +53,6 @@ jobs:
       - name: Deploy latest newsletter to gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
         run: |
           set -e
           OUTPUT_DIR="output/newsletters"
@@ -71,10 +70,6 @@ jobs:
           if [ -d "$OUTPUT_DIR/assets" ]; then
             mkdir -p gh-pages/assets
             cp -r "$OUTPUT_DIR/assets/"* gh-pages/assets/ || true
-          fi
-          # si CUSTOM_DOMAIN está definido, crear CNAME
-          if [ -n "${CUSTOM_DOMAIN}" ]; then
-            echo "${CUSTOM_DOMAIN}" > gh-pages/CNAME
           fi
           pushd gh-pages
           git init
