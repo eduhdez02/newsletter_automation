@@ -1,0 +1,107 @@
+{
+  "title": "Actualización de Drones y Tecnología",
+  "date": "2025-12-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones y regulaciones en el ecosistema de drones, destacando avances tecnológicos y cambios legislativos que impactan la industria.",
+  "news": [
+    {
+      "title": "DJI lanza una actualización masiva de firmware",
+      "summary": "DJI ha implementado una amplia serie de actualizaciones de firmware en su ecosistema de drones empresariales, introduciendo herramientas de inteligencia artificial más inteligentes, flujos de trabajo automatizados más flexibles y una integración más profunda entre dispositivos. Esto promete mejorar la eficiencia y la funcionalidad de sus drones en diversas aplicaciones.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/",
+      "published": "2025-12-15"
+    },
+    {
+      "title": "Pescadores de Texas luchan por cambiar leyes sobre drones",
+      "summary": "Un grupo de pescadores de surf en Texas está presionando para la revisión de una ley federal que prohíbe el uso de drones para soltar cebos y atraer peces. Argumentan que esta práctica podría mejorar la pesca y beneficiar a la economía local, pero se enfrentan a la resistencia de las autoridades que temen por la seguridad y la regulación del espacio aéreo.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/texas-surf-fishermen-fight-to-change-drone-drop-bait-laws/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Auterion realiza la primera demostración de ataque con enjambre",
+      "summary": "Auterion ha anunciado un avance significativo en la guerra moderna con la exitosa demostración en vivo de un enjambre de drones híbridos, compuesto por drones FPV y de ala fija. Esta demostración marca un hito en la capacidad de los drones para operar en conjunto, lo que podría cambiar la dinámica de los conflictos bélicos.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/auterion-performs-worlds-first-multi-manufacturer-swarm-strike-demonstration/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "El nuevo grado en drones del Reino Unido crea un pipeline militar",
+      "summary": "Mientras el gobierno de EE. UU. debate cómo manejar su 'problema de drones', el Reino Unido ha lanzado un nuevo programa académico que prepara a los estudiantes para trabajar en la industria de drones, creando un pipeline militar que no existe en EE. UU. Esto podría dar a Gran Bretaña una ventaja en la formación de expertos en tecnología de drones.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/16/uk-drone-degree-creates-military-pipeline-us-doesnt-have/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Un piloto de entrega médica con drones revela logísticas rurales",
+      "summary": "Un programa piloto en Traverse City ha demostrado cómo los drones pueden reducir el tiempo de transporte y mejorar la fiabilidad en la entrega de suministros médicos en áreas rurales. Este avance podría transformar la logística de atención médica, especialmente en regiones de difícil acceso.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Irán recibe el Hadid-110, un nuevo dron suicida sigiloso",
+      "summary": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán ha recibido el Hadid-110, un nuevo dron suicida con propulsión a chorro diseñado para penetrar en el espacio aéreo moderno. Este desarrollo subraya la creciente capacidad militar de Irán en el ámbito de los drones y su potencial impacto en la seguridad regional.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/irans-islamic-revolutionary-guard-takes-delivery-of-hadid-110-irans-new-jet-powered-stealth-suicide-drone/",
+      "published": "2025-12-16"
+    },
+    {
+      "title": "Ucrania afirma que un dron submarino dañó un submarino ruso",
+      "summary": "El Servicio de Seguridad de Ucrania ha anunciado un hito significativo en la guerra de drones: el primer ataque de un dron submarino contra un submarino ruso, valorado en 500 millones de dólares. Este evento podría cambiar la percepción sobre la guerra submarina y el uso de drones en conflictos navales.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/15/ukraine-underwater-drone-russian-submarine/",
+      "published": "2025-12-15"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Actualización de firmware de DJI mejora la inteligencia artificial y flujos de trabajo.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2025/12/15/dji-enterprise-drone-dock-firmware/"
+    },
+    {
+      "text": "Demostración de enjambre de drones híbridos por Auterion marca un avance en la guerra moderna.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2025/12/16/auterion-performs-worlds-first-multi-manufacturer-swarm-strike-demonstration/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones empresariales",
+      "product_or_method": "Firmware actualizado",
+      "note": "Mejora la funcionalidad y eficiencia de los drones.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "Auterion",
+      "country": "EE. UU.",
+      "service": "Tecnología de drones",
+      "product_or_method": "Drones híbridos",
+      "note": "Avance en operaciones militares con enjambres de drones.",
+      "link": "https://auterion.com"
+    },
+    {
+      "name": "UAS Vision",
+      "country": "Reino Unido",
+      "service": "Información sobre drones",
+      "product_or_method": "",
+      "note": "Cobertura de innovaciones en tecnología de drones.",
+      "link": "https://www.uasvision.com"
+    }
+  ],
+  "trends": [
+    {
+      "text": "El nuevo grado en drones del Reino Unido podría influir en la formación militar.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2025/12/16/uk-drone-degree-creates-military-pipeline-us-doesnt-have/"
+    },
+    {
+      "text": "El uso de drones en la entrega médica puede transformar la logística rural.",
+      "source_name": "Dronelife",
+      "source_link": "https://dronelife.com/2025/12/16/what-a-medical-drone-delivery-pilot-reveals-about-rural-healthcare-logistics/"
+    }
+  ],
+  "recommendation": "Priorizar el desarrollo de regulaciones que permitan el uso de drones en la pesca y la entrega médica."
+}
