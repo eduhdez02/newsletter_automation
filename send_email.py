@@ -57,7 +57,7 @@ def build_public_url(latest_html_path: Path):
     g_repo = os.getenv("GITHUB_REPOSITORY")
     if g_repo:
         owner, repo = g_repo.split("/", 1)
-        return f"https://{owner}.github.io/{repo}/"
+        return f"https://{owner}.github.io/{repo}/index.html"
 
     return f"file://{latest_html_path.resolve()}"
 
