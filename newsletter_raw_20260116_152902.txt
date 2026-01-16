@@ -1,0 +1,100 @@
+{
+  "title": "Boletín de Noticias sobre Drones",
+  "date": "2026-01-15",
+  "summary_exec": "Resumen ejecutivo sobre las últimas novedades en la industria de drones, incluyendo lanzamientos de productos, regulaciones y avances tecnológicos que impactan el mercado.",
+  "news": [
+    {
+      "title": "DJI Mavic 4 Pro llega a Amazon con descuentos de hasta el 19%",
+      "summary": "Después de meses de incertidumbre en la disponibilidad de DJI, el Mavic 4 Pro finalmente está accesible en Amazon con descuentos significativos. Este dron es esperado por muchos pilotos y su llegada podría revitalizar el mercado de drones de consumo.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2026/01/14/dji-mavic-4-pro-amazon-discount-buying-guide/",
+      "published": "2026-01-14"
+    },
+    {
+      "title": "Nuevas reglas en EE. UU. podrían hundir el dron acuático Aqua de HoverAir",
+      "summary": "El HoverAir Aqua, promocionado como el primer dron selfie a prueba de agua, enfrenta desafíos regulatorios en EE. UU. que podrían limitar su uso. Este dron está diseñado para volar sin preocupaciones sobre el agua, pero las nuevas normativas podrían afectar su futuro.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/01/09/hoverair-aqua-us-ban-drone/",
+      "published": "2026-01-09"
+    },
+    {
+      "title": "Pilotos del F-35 de la Marina de EE. UU. entrenan controlando drones con tabletas táctiles",
+      "summary": "El Centro de Guerra Aérea Naval ha logrado un hito en la integración del F-35 Lightning II con drones de combate colaborativos. Este avance en el entrenamiento de pilotos podría mejorar la eficacia en operaciones militares.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/01/15/us-navy-f-35-pilots-train-controlling-drones-with-touchscreen-tablets/",
+      "published": "2026-01-15"
+    },
+    {
+      "title": "Actualización sobre la prohibición de drones chinos: DJI sigue estancada",
+      "summary": "Los pilotos de drones en EE. UU. se enfrentan a la confusión sobre la prohibición de drones de DJI. La situación actual es incierta, lo que genera preocupación entre los usuarios sobre la disponibilidad y el uso de estos dispositivos.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/01/12/us-dji-ban-commerce-department/",
+      "published": "2026-01-12"
+    },
+    {
+      "title": "Unifly completa proyecto de estándares de seguridad de detección y evitación liderado por la FAA",
+      "summary": "Unifly, una subsidiaria de Terra Drone, ha validado los 'Requisitos de Bien Claro' para sistemas de detección y evitación de drones bajo el consorcio de investigación ASSURE de la FAA. Este avance es crucial para la seguridad en el uso de drones.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/01/15/unifly-completes-faa-led-detect-and-avoid-standards-project/",
+      "published": "2026-01-15"
+    },
+    {
+      "title": "California presenta los primeros mapas Lidar a nivel estatal",
+      "summary": "California ha lanzado un ambicioso proyecto de mapas Lidar para contrarrestar las amenazas de incendios forestales. Este esfuerzo marca un año desde los devastadores incendios en Los Ángeles y representa un avance significativo en la tecnología geoespacial.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/california-unveils-first-ever-statewide-lidar-maps/",
+      "published": "2026-01-15"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Unifly valida estándares de detección y evitación para drones.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/01/15/unifly-completes-faa-led-detect-and-avoid-standards-project/"
+    },
+    {
+      "text": "California lanza mapas Lidar para mejorar la respuesta a incendios.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/california-unveils-first-ever-statewide-lidar-maps/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones de consumo",
+      "product_or_method": "Mavic 4 Pro",
+      "note": "Accesible en Amazon con descuentos.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "HoverAir",
+      "country": "EE. UU.",
+      "service": "Drones acuáticos",
+      "product_or_method": "Aqua",
+      "note": "Primer dron selfie a prueba de agua.",
+      "link": "https://hoverair.com"
+    },
+    {
+      "name": "Unifly",
+      "country": "Bélgica",
+      "service": "Gestión de drones",
+      "product_or_method": "Sistemas de detección y evitación",
+      "note": "Validación de estándares de seguridad.",
+      "link": "https://unifly.aero"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Regulaciones en EE. UU. afectan el uso de drones de DJI.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/01/12/us-dji-ban-commerce-department/"
+    },
+    {
+      "text": "Desarrollo de mapas Lidar como respuesta a incendios forestales.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/news/california-unveils-first-ever-statewide-lidar-maps/"
+    }
+  ],
+  "recommendation": "Priorizar la adaptación a nuevas regulaciones para el uso de drones en EE. UU."
+}
