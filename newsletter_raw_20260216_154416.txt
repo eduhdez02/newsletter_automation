@@ -1,0 +1,108 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2026-02-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones en drones y tecnologías relacionadas, destacando avances significativos en detección, regulación y desarrollo de nuevos productos.",
+  "news": [
+    {
+      "title": "MatrixSpace Fusion 360 Expande Detección Avanzada de Drones",
+      "summary": "MatrixSpace ha presentado el MatrixSpace Fusion 360, una nueva adición a su cartera de contramedidas para drones. Este sistema integra sensores de radar, ópticos y RF/Remote ID, mejorando la capacidad de detección y respuesta ante amenazas aéreas.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/02/13/matrixspace-fusion-360-expands-advanced-drone-detection/",
+      "published": "2026-02-13"
+    },
+    {
+      "title": "Sener Presenta el Drone Stealth SRC 100 Razor",
+      "summary": "En el World Defense Show en Riad, Sener ha revelado su plataforma autónoma multipropósito SRC 100 Razor. Este dron está diseñado para satisfacer las necesidades operativas en evolución de las fuerzas armadas modernas.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/02/16/spains-sener-unveils-src-100-razor-unmanned-stealth-drone-at-the-world-defense-show/",
+      "published": "2026-02-16"
+    },
+    {
+      "title": "DJI Obtiene Aprobación Revolucionaria de Drones en Brasil",
+      "summary": "Brasil ha otorgado a DJI una victoria regulatoria que podría transformar la forma en que los drones empresariales escalan, no solo en Sudamérica, sino a nivel mundial. La Agencia Nacional de Aviación Civil de Brasil (ANAC) ha facilitado este avance.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/02/11/dji-bvlos-drone-approva-brazil/",
+      "published": "2026-02-11"
+    },
+    {
+      "title": "Relanzamiento de The UAV Digest: eVTOLs y Drones",
+      "summary": "Max Flight y David Vanderhoof han regresado al podcasting con el relanzamiento de The UAV Digest, ahora rebranded como UAV News Talk. En este episodio, discuten las últimas tendencias en eVTOLs y drones, así como el futuro de la aviación.",
+      "source_name": "The UAV Digest",
+      "source_link": "https://theuavdigest.com/429-the-uav-digest-relaunch-evtols-drones-and-the-future-of-flight/",
+      "published": "2026-02-13"
+    },
+    {
+      "title": "Grupo Estudiantil Presenta Dron de Investigación Impreso en 3D",
+      "summary": "Un grupo estudiantil sin fines de lucro ha presentado un dron de investigación impreso en 3D. Este avance refleja cómo los drones se están convirtiendo en herramientas vitales para la investigación científica, abordando preguntas sobre su aplicación y efectividad.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/02/13/non-profit-student-led-group-unveils-3d-printed-research-drone/",
+      "published": "2026-02-13"
+    },
+    {
+      "title": "DJI Mini 5 Pro: Un Dron que No se Puede Ignorar",
+      "summary": "El DJI Mini 5 Pro ha captado la atención en el mercado de drones de EE. UU. con sus características mejoradas. Este modelo se destaca por su capacidad de respuesta y versatilidad, lo que lo convierte en una opción atractiva para los usuarios.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/02/12/deal-mini-5-pro-dji/",
+      "published": "2026-02-12"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Desarrollo de la 'Cartridge Killer' de la Marina de EE. UU.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/02/13/u-s-navys-drone-killer-cartridge-breakthrough-to-redefine-small-arms-kinetic-defence/"
+    },
+    {
+      "text": "Emesent Anuncia Nuevo Producto en Geo Week 2026",
+      "source_name": "LiDAR News",
+      "source_link": "https://lidarnews.com/visit-emesent-at-geo-week-2026/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "MatrixSpace",
+      "country": "EE. UU.",
+      "service": "Detección de drones",
+      "product_or_method": "MatrixSpace Fusion 360",
+      "note": "Mejora la detección de amenazas aéreas.",
+      "link": "https://dronelife.com/2026/02/13/matrixspace-fusion-360-expands-advanced-drone-detection/"
+    },
+    {
+      "name": "Sener",
+      "country": "España",
+      "service": "Drones militares",
+      "product_or_method": "SRC 100 Razor",
+      "note": "Diseñado para necesidades operativas avanzadas.",
+      "link": "https://www.uasvision.com/2026/02/16/spains-sener-unveils-src-100-razor-unmanned-stealth-drone-at-the-world-defense-show/"
+    },
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones comerciales",
+      "product_or_method": "DJI Mini 5 Pro",
+      "note": "Aprobación regulatoria en Brasil que puede cambiar el mercado.",
+      "link": "https://dronedj.com/2026/02/11/dji-bvlos-drone-approva-brazil/"
+    },
+    {
+      "name": "Emesent",
+      "country": "Australia",
+      "service": "Tecnología LiDAR",
+      "product_or_method": "Nuevo producto",
+      "note": "Anuncio importante en Geo Week 2026.",
+      "link": "https://lidarnews.com/visit-emesent-at-geo-week-2026/"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Aprobaciones regulatorias en Brasil impulsan el mercado de drones.",
+      "source_name": "ANAC",
+      "source_link": "https://dronedj.com/2026/02/11/dji-bvlos-drone-approva-brazil/"
+    },
+    {
+      "text": "El uso de drones en investigación científica sigue en aumento.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/02/13/non-profit-student-led-group-unveils-3d-printed-research-drone/"
+    }
+  ],
+  "recommendation": "Priorizar la integración de tecnologías avanzadas en drones para mejorar la detección y respuesta ante amenazas."
+}
