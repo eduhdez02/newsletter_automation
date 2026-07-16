@@ -1,0 +1,100 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2026-07-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones en drones y tecnología LiDAR, destacando la importancia de las aprobaciones regulatorias y los avances en energía sostenible para UAVs.",
+  "news": [
+    {
+      "title": "DJI facilita las aprobaciones de drones BVLOS en Europa",
+      "summary": "DJI ha simplificado el proceso de aprobación regulatoria para el uso de drones BVLOS en Europa, lo que representa un gran avance para las empresas que buscan desplegar drones en el continente. Este cambio podría acelerar la adopción de tecnología de drones en diversas industrias.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/07/16/dji-drone-easa-sail-bvlos/",
+      "published": "2026-07-16"
+    },
+    {
+      "title": "La cartografía de la fiebre del oro revela reliquias y peligros",
+      "summary": "Un estudio de cuatro años realizado por el Servicio Geológico de Victoria ha utilizado tecnología LiDAR avanzada para descubrir más de 230,000 reliquias de la fiebre del oro en Australia. Este avance no solo ayuda a preservar la historia, sino que también identifica peligros ocultos en el terreno.",
+      "source_name": "LiDAR News",
+      "source_link": "https://lidarnews.com/gold-rush-mapping-reveals-relics-and-dangers/",
+      "published": "2026-07-16"
+    },
+    {
+      "title": "Mapeo de incendios forestales con LiDAR en Saskatchewan",
+      "summary": "Stitch3D implementó un flujo de trabajo combinado de LiDAR y fotogrametría durante la respuesta al incendio Wolf en Saskatchewan. Esta tecnología permitió una respuesta más rápida y efectiva ante desastres, demostrando el valor de los drones en situaciones críticas.",
+      "source_name": "LiDAR News",
+      "source_link": "https://lidarnews.com/drone-lidar-wildfire-mapping-in-saskatchewan/",
+      "published": "2026-07-16"
+    },
+    {
+      "title": "Tecnología C-UAS: Dazzler láser ciega sensores de drones",
+      "summary": "UBURU, Inc. ha realizado pruebas exitosas de su tecnología Dazzler láser, que puede cegar los sensores de drones, ofreciendo una nueva solución no cinética para la defensa y seguridad. Este avance podría cambiar la forma en que se gestionan las amenazas de drones.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/07/15/laser-dazzler-blinds-drone-sensors-in-breakthrough-c-uas-technology-trials/",
+      "published": "2026-07-15"
+    },
+    {
+      "title": "Nuevo sistema de propulsión de hidrógeno para UAVs",
+      "summary": "Intelligent Energy ha presentado un nuevo sistema de celdas de combustible de hidrógeno de 120 kW diseñado para drones de carga pesada. Este avance en energía sostenible promete aumentar la eficiencia y la capacidad de los UAVs en diversas aplicaciones.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/07/16/new-heavy-lift-hydrogen-powertrain-for-uavs/",
+      "published": "2026-07-16"
+    },
+    {
+      "title": "DJI presenta su primer dron de entrega eVTOL",
+      "summary": "DJI ha lanzado el DJI EV50, su primer dron de entrega eVTOL, que ha alcanzado una altitud de 29,072 pies. Este dron representa un avance significativo en la tecnología de entrega aérea, aunque aún no hay información sobre su disponibilidad comercial.",
+      "source_name": "DroneXL",
+      "source_link": "https://dronexl.co/2026/07/09/dji-ev50-evtol-delivery-drone-everest/",
+      "published": "2026-07-09"
+    }
+  ],
+  "tech": [
+    {
+      "text": "DJI facilita las aprobaciones de drones BVLOS en Europa.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/07/16/dji-drone-easa-sail-bvlos/"
+    },
+    {
+      "text": "Nuevo sistema de propulsión de hidrógeno para UAVs.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/07/16/new-heavy-lift-hydrogen-powertrain-for-uavs/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones",
+      "product_or_method": "DJI EV50",
+      "note": "Primer dron de entrega eVTOL de la compañía.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "Intelligent Energy",
+      "country": "Reino Unido",
+      "service": "Celdas de combustible",
+      "product_or_method": "Sistema de propulsión de hidrógeno de 120 kW",
+      "note": "Aumenta la eficiencia de los UAVs.",
+      "link": "https://www.intelligent-energy.com"
+    },
+    {
+      "name": "UBURU, Inc.",
+      "country": "Estados Unidos",
+      "service": "Defensa y seguridad",
+      "product_or_method": "Tecnología Dazzler láser",
+      "note": "Ofrece soluciones no cinéticas para la defensa.",
+      "link": "https://www.uburu.com"
+    }
+  ],
+  "trends": [
+    {
+      "text": "La cartografía de la fiebre del oro revela reliquias y peligros.",
+      "source_name": "LiDAR News",
+      "source_link": "https://lidarnews.com/gold-rush-mapping-reveals-relics-and-dangers/"
+    },
+    {
+      "text": "Mapeo de incendios forestales con LiDAR en Saskatchewan.",
+      "source_name": "LiDAR News",
+      "source_link": "https://lidarnews.com/drone-lidar-wildfire-mapping-in-saskatchewan/"
+    }
+  ],
+  "recommendation": "Priorizar la adopción de tecnologías de drones para la respuesta a desastres y la cartografía avanzada."
+}
