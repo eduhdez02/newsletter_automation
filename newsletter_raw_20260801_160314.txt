@@ -1,0 +1,116 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2026-08-01",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones y regulaciones en el sector de drones y tecnología de captura de realidad, destacando la importancia de la colaboración entre empresas y la evolución de las normativas.",
+  "news": [
+    {
+      "title": "DJI facilita aprobaciones de drones BVLOS en Europa",
+      "summary": "DJI ha simplificado el proceso de aprobación regulatoria para el uso de drones BVLOS en Europa, lo que representa un avance significativo para las empresas que buscan desplegar drones en el continente. Esta mejora podría acelerar la adopción de tecnología de drones en diversas industrias.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/07/16/dji-drone-easa-sail-bvlos/",
+      "published": "2026-07-16"
+    },
+    {
+      "title": "FCC intensifica la lucha contra empresas fantasma de DJI",
+      "summary": "La FCC ha ampliado su investigación sobre las empresas que operan como fachada para DJI, lo que ha llevado a la aparición de nuevas marcas en plataformas de venta como Amazon. Este movimiento busca proteger a los consumidores y asegurar la transparencia en el mercado de drones.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/07/21/amazon-dji-drone-alternatives-fcc/",
+      "published": "2026-07-21"
+    },
+    {
+      "title": "GeoComm y SkyfireAI mejoran la inteligencia de ubicación para drones de respuesta",
+      "summary": "GeoComm y SkyfireAI han formado una alianza para mejorar la inteligencia de ubicación en programas de drones como primera respuesta. Esta integración permitirá a los equipos de emergencia contar con información más precisa antes de lanzar sus aeronaves, optimizando así las operaciones de rescate.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/07/31/geocomm-skyfireai-drone-first-responder-routing/",
+      "published": "2026-07-31"
+    },
+    {
+      "title": "Relanzamiento de The UAV Digest: eVTOLs, Drones y el Futuro del Vuelo",
+      "summary": "El podcast The UAV Digest ha sido relanzado como UAV News Talk, con nuevos coanfitriones que discuten sobre eVTOLs, drones y las tendencias futuras en la aviación. Este relanzamiento promete ofrecer contenido fresco y relevante para los entusiastas de la tecnología aérea.",
+      "source_name": "The UAV Digest",
+      "source_link": "https://theuavdigest.com/429-the-uav-digest-relaunch-evtols-drones-and-the-future-of-flight/",
+      "published": "2026-07-31"
+    },
+    {
+      "title": "Ericsson y AT&T utilizan datos celulares para detectar drones",
+      "summary": "Ericsson y AT&T han desarrollado una tecnología que utiliza datos celulares para detectar drones, una herramienta valiosa para las agencias de seguridad y el gobierno local. Esta innovación se ha vuelto crucial tras eventos masivos como la Copa Mundial de la FIFA.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/07/31/ericsson-att-use-cellular-data-to-detect-drones/",
+      "published": "2026-07-31"
+    },
+    {
+      "title": "Lidar de navegación autónoma para la misión lunar de la ESA",
+      "summary": "La Agencia Espacial Europea está utilizando tecnología de lidar de navegación autónoma para su misión lunar Argonaut. Esta tecnología permitirá a las máquinas navegar en entornos complejos sin intervención humana, marcando un avance significativo en la exploración espacial.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/autonomous-navigation-lidar-heads-to-the-moon/",
+      "published": "2026-07-31"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Lidar de navegación autónoma para misiones espaciales.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/autonomous-navigation-lidar-heads-to-the-moon/"
+    },
+    {
+      "text": "Uso de datos celulares para la detección de drones.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/07/31/ericsson-att-use-cellular-data-to-detect-drones/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones",
+      "product_or_method": "Drones BVLOS",
+      "note": "Facilita aprobaciones regulatorias en Europa.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "GeoComm",
+      "country": "Estados Unidos",
+      "service": "Inteligencia de ubicación",
+      "product_or_method": "Integración con SkyfireAI",
+      "note": "Mejora la respuesta de emergencia con drones.",
+      "link": "https://www.geo-comm.com"
+    },
+    {
+      "name": "SkyfireAI",
+      "country": "Estados Unidos",
+      "service": "Tecnología de drones",
+      "product_or_method": "Integración con GeoComm",
+      "note": "Optimiza la inteligencia de ubicación para drones.",
+      "link": "https://www.skyfireai.com"
+    },
+    {
+      "name": "Ericsson",
+      "country": "Suecia",
+      "service": "Telecomunicaciones",
+      "product_or_method": "Detección de drones con datos celulares",
+      "note": "Colabora con AT&T para mejorar la seguridad.",
+      "link": "https://www.ericsson.com"
+    },
+    {
+      "name": "AT&T",
+      "country": "Estados Unidos",
+      "service": "Telecomunicaciones",
+      "product_or_method": "Detección de drones con datos celulares",
+      "note": "Asocia con Ericsson para innovaciones en seguridad.",
+      "link": "https://www.att.com"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Aumento en la regulación de drones en Europa.",
+      "source_name": "EASA",
+      "source_link": "https://www.easa.europa.eu"
+    },
+    {
+      "text": "Innovaciones en tecnología de respuesta de emergencia con drones.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com"
+    }
+  ],
+  "recommendation": "Priorizar la colaboración entre empresas para mejorar la inteligencia de ubicación en operaciones de drones."
+}
