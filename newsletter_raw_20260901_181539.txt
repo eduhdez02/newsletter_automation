@@ -1,0 +1,95 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2026-09-01",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones y adquisiciones en el sector de drones, destacando la participación de DJI en IFA 2026 y la adquisición de drones por parte de Taiwán.",
+  "news": [
+    {
+      "title": "Qué esperar de DJI en IFA 2026",
+      "summary": "DJI se prepara para IFA 2026 en Berlín, donde presentará más que solo drones. Los visitantes podrán ver por primera vez en Europa sus últimas innovaciones del 4 al 8 de septiembre, lo que promete ser un evento clave para la industria.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/09/01/dji-ifa-2026-berlin-osmo/",
+      "published": "2026-09-01"
+    },
+    {
+      "title": "DJI Matrice 400 finalmente tiene su propio muelle autónomo",
+      "summary": "El DJI Matrice 400 ha recibido un muelle autónomo, lo que resuelve uno de los mayores desafíos en el mundo de los drones empresariales: la elección entre potencia y automatización. Este avance permitirá un uso más eficiente de los drones en operaciones complejas.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/08/31/infinit-drones-dji-m400-dock/",
+      "published": "2026-08-31"
+    },
+    {
+      "title": "La FCC mantiene la fecha límite del 2 de septiembre para comentarios sobre restricciones de drones 'militares'",
+      "summary": "La FCC está considerando restricciones sobre UAS producidos en el extranjero que incluyen imágenes térmicas y LiDAR. DRONERESPONDERS y la Commercial Drone Alliance han solicitado más tiempo para presentar sus comentarios sobre estas propuestas.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/08/31/fcc-military-grade-uas-proposal-comment-deadline/",
+      "published": "2026-08-31"
+    },
+    {
+      "title": "Taiwán adquirirá más de 2,000 drones Altius de Anduril",
+      "summary": "Taiwán ha firmado un contrato de NT$26.9 mil millones (US$ 847 millones) para adquirir más de 2,000 drones de ataque y reconocimiento fabricados en EE. UU. Esta adquisición es parte de su estrategia para fortalecer sus capacidades asimétricas.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/09/01/taiwan-to-acquire-more-than-2000-altius-drones-from-anduril/",
+      "published": "2026-09-01"
+    },
+    {
+      "title": "Personal de la frontera sur de EE. UU. destruye drones de carteles con sistema láser de alta energía",
+      "summary": "La semana pasada, miembros de la Fuerza de Tarea Conjunta de la Frontera Sur utilizaron un sistema láser de alta energía del Ejército para neutralizar tres drones hostiles. Este uso de tecnología avanzada resalta la creciente amenaza de los drones en actividades delictivas.",
+      "source_name": "UAS Vision",
+      "source_link": "https://www.uasvision.com/2026/08/31/us-southern-border-personnel-blast-cartel-drones-using-army-multipurpose-high-energy-laser-system/",
+      "published": "2026-08-31"
+    },
+    {
+      "title": "Fraunhofer IDMT demuestra detección acústica de drones en Drone Days 2026",
+      "summary": "Fraunhofer IDMT ha desarrollado una solución de sensor acústico inteligente que detecta y localiza drones basándose en sus patrones de sonido característicos. Esta tecnología se presentó en el evento Drone Days 2026 en Bremen/Hatten.",
+      "source_name": "GeoConnexion",
+      "source_link": "https://www.geoconnexion.com/news/fraunhofer-idmt-demonstrates-acoustic-drone-detection-at-drone-days-2026-in-bremen-hatten",
+      "published": "2026-09-01"
+    }
+  ],
+  "tech": [
+    {
+      "text": "DJI presenta un muelle autónomo para el Matrice 400, mejorando la automatización en operaciones de drones.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/08/31/infinit-drones-dji-m400-dock/"
+    },
+    {
+      "text": "Fraunhofer IDMT desarrolla un sensor acústico para la detección de drones, mejorando la seguridad en espacios aéreos.",
+      "source_name": "GeoConnexion",
+      "source_link": "https://www.geoconnexion.com/news/fraunhofer-idmt-demonstrates-acoustic-drone-detection-at-drone-days-2026-in-bremen-hatten"
+    }
+  ],
+  "companies": [
+    {
+      "name": "DJI",
+      "country": "China",
+      "service": "Drones",
+      "product_or_method": "Matrice 400",
+      "note": "Innovaciones en automatización y potencia.",
+      "link": "https://www.dji.com"
+    },
+    {
+      "name": "Anduril",
+      "country": "EE. UU.",
+      "service": "Drones de defensa",
+      "product_or_method": "Altius",
+      "note": "Adquisición significativa por parte de Taiwán.",
+      "link": "https://www.anduril.com"
+    },
+    {
+      "name": "Fraunhofer IDMT",
+      "country": "Alemania",
+      "service": "Investigación y desarrollo",
+      "product_or_method": "Sensor acústico",
+      "note": "Mejora en la detección de drones.",
+      "link": "https://www.idmt.fraunhofer.de"
+    }
+  ],
+  "trends": [
+    {
+      "text": "La FCC está considerando restricciones sobre drones militares, lo que podría afectar el mercado de UAS.",
+      "source_name": "FCC",
+      "source_link": "https://www.fcc.gov"
+    }
+  ],
+  "recommendation": "Priorizar la integración de tecnologías de detección acústica en operaciones de drones para mejorar la seguridad."
+}
