@@ -1,0 +1,103 @@
+{
+  "title": "DAUCH — Newsletter",
+  "date": "2026-09-16",
+  "summary_exec": "Resumen ejecutivo sobre las últimas innovaciones en drones y tecnología de mapeo, destacando la importancia de la detección acústica y la colaboración entre empresas para mejorar la inteligencia subsuperficial.",
+  "news": [
+    {
+      "title": "Flytrex añade muelles para drones en azoteas y posicionamiento de flota con IA en Dallas",
+      "summary": "Flytrex ha introducido un sistema de muelles en azoteas para drones, lo que permite preposicionar drones en restaurantes. Esto puede reducir los costos de entrega en un 60% y disminuir los tiempos de entrega a la mitad, mejorando la eficiencia operativa.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/09/16/flytrex-rooftop-drone-docks-dallas/",
+      "published": "2026-09-16"
+    },
+    {
+      "title": "Fraunhofer IDMT demuestra detección acústica de drones en Drone Days 2026",
+      "summary": "En el evento Drone Days 2026, Fraunhofer IDMT presentó una solución de sensor acústico inteligente capaz de detectar y localizar drones basándose en sus patrones de sonido característicos, incluso sin visión directa, lo que representa un avance significativo en la seguridad aérea.",
+      "source_name": "GeoConnexion",
+      "source_link": "https://www.geoconnexion.com/news/fraunhofer-idmt-demonstrates-acoustic-drone-detection-at-drone-days-2026-in-bremen-hatten",
+      "published": "2026-09-16"
+    },
+    {
+      "title": "Propuesta de prohibición de drones de la FCC podría poner en riesgo espectáculos aéreos en EE. UU.",
+      "summary": "La FCC está considerando una prohibición de drones fabricados en el extranjero, lo que podría afectar a los operadores de espectáculos de luces aéreos en EE. UU. Un importante operador de espectáculos de luces ha expresado su preocupación, lo que podría tener un impacto significativo en la industria.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/09/14/skyworx-swarming-drone-fcc-ban/",
+      "published": "2026-09-14"
+    },
+    {
+      "title": "Lidar de luz blanca: combinando geometría e información espectral",
+      "summary": "El lidar ha sido fundamental para determinar la ubicación en el espacio tridimensional. Sin embargo, la nueva tecnología de lidar de luz blanca promete ir más allá de la geometría, integrando información espectral para aplicaciones más avanzadas en mapeo y análisis.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/white-light-lidar-beyond-geometry/",
+      "published": "2026-09-16"
+    },
+    {
+      "title": "AIVE AI Systems amplía el acceso a datos geoespaciales",
+      "summary": "AIVE está desarrollando herramientas que permiten crear mapas 2D georreferenciados a partir de un número reducido de imágenes, sin necesidad de infraestructura especializada. Esta innovación podría revolucionar la forma en que se realiza el mapeo en diversas industrias.",
+      "source_name": "DroneLife",
+      "source_link": "https://dronelife.com/2026/09/16/aive-fast-georeferenced-drone-mapping/",
+      "published": "2026-09-16"
+    },
+    {
+      "title": "Topcon y Proceq anuncian colaboración para aplicaciones de inteligencia subsuperficial en EMEA",
+      "summary": "Topcon y Proceq han unido fuerzas para integrar sistemas avanzados de radar de penetración terrestre (GPR) con soluciones GNSS de Topcon, mejorando así la capacidad de análisis del subsuelo en la región EMEA.",
+      "source_name": "GeoConnexion",
+      "source_link": "https://www.geoconnexion.com/news/topcon-and-proceq-announce-collaboration-for-subsurface-intelligence-applications-in-emea",
+      "published": "2026-09-16"
+    }
+  ],
+  "tech": [
+    {
+      "text": "Sistema de detección acústica de drones desarrollado por Fraunhofer IDMT.",
+      "source_name": "GeoConnexion",
+      "source_link": "https://www.geoconnexion.com/news/fraunhofer-idmt-demonstrates-acoustic-drone-detection-at-drone-days-2026-in-bremen-hatten"
+    },
+    {
+      "text": "Lidar de luz blanca que combina geometría e información espectral.",
+      "source_name": "Lidar News",
+      "source_link": "https://lidarnews.com/white-light-lidar-beyond-geometry/"
+    }
+  ],
+  "companies": [
+    {
+      "name": "Flytrex",
+      "country": "EE. UU.",
+      "service": "Entrega de alimentos",
+      "product_or_method": "Sistema de muelles para drones",
+      "note": "Reduce costos y tiempos de entrega.",
+      "link": "https://dronelife.com/2026/09/16/flytrex-rooftop-drone-docks-dallas/"
+    },
+    {
+      "name": "Fraunhofer IDMT",
+      "country": "Alemania",
+      "service": "Tecnología de detección",
+      "product_or_method": "Sensor acústico para drones",
+      "note": "Mejora la seguridad aérea.",
+      "link": "https://www.geoconnexion.com/news/fraunhofer-idmt-demonstrates-acoustic-drone-detection-at-drone-days-2026-in-bremen-hatten"
+    },
+    {
+      "name": "AIVE AI Systems",
+      "country": "EE. UU.",
+      "service": "Geoespacial",
+      "product_or_method": "Herramientas de mapeo 2D",
+      "note": "Facilita el acceso a datos geoespaciales.",
+      "link": "https://dronelife.com/2026/09/16/aive-fast-georeferenced-drone-mapping/"
+    },
+    {
+      "name": "Topcon",
+      "country": "Japón",
+      "service": "Tecnología de posicionamiento",
+      "product_or_method": "Soluciones GNSS",
+      "note": "Colaboración para inteligencia subsuperficial.",
+      "link": "https://www.geoconnexion.com/news/topcon-and-proceq-announce-collaboration-for-subsurface-intelligence-applications-in-emea"
+    }
+  ],
+  "trends": [
+    {
+      "text": "Propuesta de la FCC que podría afectar a los drones extranjeros.",
+      "source_name": "DroneDJ",
+      "source_link": "https://dronedj.com/2026/09/14/skyworx-swarming-drone-fcc-ban/"
+    }
+  ],
+  "recommendation": "Priorizar la implementación de tecnologías de detección acústica para mejorar la seguridad en operaciones de drones."
+}
