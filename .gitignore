@@ -1,0 +1,16 @@
+# Secretos y config local
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Salida generada (se publica a gh-pages vía el workflow, no vive en main)
+output/newsletters/editions/
+output/newsletters/assets/
+output/newsletters/email_preview_*.html
+output/newsletters/index.html
+output/newsletters/archive.html

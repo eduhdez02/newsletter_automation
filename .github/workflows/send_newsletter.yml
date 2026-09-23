@@ -2,9 +2,19 @@ name: Send DAUCH Newsletter
 
 on:
   schedule:
-    # 1 y 16 del mes a las 15:00 UTC (09:00 UTC-6)
+    # 1 y 16 del mes a las 15:00 UTC (09:00 UTC-6) — envío real (--full)
     - cron: '0 15 1,16 * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Modo de ejecución"
+        required: true
+        default: "test"
+        type: choice
+        options:
+          - dry-run
+          - test
+          - full
 
 permissions:
   contents: write
@@ -14,34 +24,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Clonar repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3️⃣ Dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || true
-          pip install jinja2 python-dotenv feedparser beautifulsoup4 python-dateutil openai lxml || true
+          pip install -r requirements.txt
 
-      # 4️⃣ Generar newsletter HTML
-      - name: Generate newsletter HTML
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          RSS_FEEDS: ${{ secrets.RSS_FEEDS }}
+      # El cron programado siempre envía en modo --full (lista real de
+      # destinatarios). Las corridas manuales (workflow_dispatch) usan el
+      # modo elegido en la UI de Actions, "test" por default para nunca
+      # mandar de más por accidente.
+      - name: Determine run mode
+        id: mode
         run: |
-          python summarizer.py
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "mode=--full" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=--${{ github.event.inputs.mode || 'test' }}" >> "$GITHUB_OUTPUT"
+          fi
 
-      # 5️⃣ Enviar correo (solo link)
-      - name: Send email with newsletter link
+      - name: Generate and send newsletter
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -49,15 +61,19 @@ jobs:
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
           FROM_NAME: ${{ secrets.FROM_NAME }}
           RECEIVERS: ${{ secrets.RECEIVERS }}
-          SUBJECT_PREFIX: "DAUCH — Newsletter"
+          TEST_RECIPIENT: ${{ secrets.TEST_RECIPIENT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          python send_email.py
+          python run_newsletter.py ${{ steps.mode.outputs.mode }}
 
-      # 6️⃣ Publicar en GitHub Pages (gh-pages)
+      # keep_files: true — a diferencia del workflow anterior, esto NO
+      # borra las ediciones pasadas en gh-pages (antes se perdía el
+      # historial en cada corrida).
       - name: Deploy newsletter to GitHub Pages
+        if: steps.mode.outputs.mode != '--dry-run'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: output/newsletters
-          keep_files: false
+          keep_files: true

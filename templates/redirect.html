@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url={{ latest_url }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DAUCH — Newsletter geoespacial</title>
+<style>
+  body {
+    margin: 0; min-height: 100vh; background: #05070d; color: #f4f6fb;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .box { padding: 24px; }
+  img { height: 34px; width: auto; margin-bottom: 22px; }
+  p { color: #7c86a3; font-size: 14px; }
+  a { color: #5b7dff; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="box">
+    <img src="{{ assets }}/logo-dauch-white.png" alt="DAUCH" />
+    <p>Redirigiendo a la edición más reciente…</p>
+    <p><a href="{{ latest_url }}">Haz clic aquí si no te redirige automáticamente →</a></p>
+  </div>
+  <script>window.location.replace("{{ latest_url }}");</script>
+</body>
+</html>

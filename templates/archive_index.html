@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Archivo — Newsletter DAUCH</title>
+<style>
+  :root { --bg:#05070d; --text-0:#f4f6fb; --text-1:#b9c2d6; --text-2:#7c86a3; --blue:#2E51EA; --glow:#5b7dff; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text-0);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 60px 24px 80px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 44px; }
+  header img { height: 26px; width: auto; }
+  h1 { font-size: 30px; margin: 0 0 8px; }
+  p.lede { color: var(--text-1); margin: 0 0 40px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li {
+    border: 1px solid rgba(255,255,255,0.08); border-radius: 14px;
+    padding: 20px 22px; margin-bottom: 14px; transition: border-color .2s, background .2s;
+  }
+  li:hover { border-color: rgba(91,125,255,0.35); background: rgba(255,255,255,0.02); }
+  li a { text-decoration: none; color: inherit; display: block; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+  .edition { font-size: 12px; color: var(--glow); text-transform: uppercase; letter-spacing: 0.08em; }
+  .date { font-size: 12px; color: var(--text-2); }
+  .summary { font-size: 14px; color: var(--text-1); line-height: 1.5; }
+  .empty { color: var(--text-2); font-size: 14px; }
+  a.back { color: var(--glow); font-size: 13px; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="{{ assets }}/logo-dauch-white.png" alt="DAUCH" />
+  </header>
+  <h1>Archivo de ediciones</h1>
+  <p class="lede">Historial completo del newsletter quincenal de novedades del sector geoespacial.</p>
+
+  {% if editions %}
+  <ul>
+    {% for ed in editions %}
+    <li>
+      <a href="{{ ed.url }}">
+        <div class="row">
+          <span class="edition">Edición #{{ ed.edition_number }}</span>
+          <span class="date">{{ ed.date }}</span>
+        </div>
+        <div class="summary">{{ ed.summary_exec[:180] }}{% if ed.summary_exec|length > 180 %}…{% endif %}</div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty">Aún no hay ediciones publicadas.</p>
+  {% endif %}
+
+  <p style="margin-top:36px;"><a class="back" href="index.html">← Volver a la edición más reciente</a></p>
+</div>
+</body>
+</html>

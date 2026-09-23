@@ -1,6 +1,10 @@
+anthropic
+pydantic
 beautifulsoup4
 feedparser
 requests
-openai
 python-dotenv
 lxml
+python-dateutil
+readability-lxml
+jinja2
