@@ -58,6 +58,7 @@ def main():
     mode = "test" if args.test else ("full" if args.full else "dry-run")
 
     config.require_anthropic_key()
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     print("1) Descargando noticias de todas las fuentes...")
     raw_items = fetch_news()
@@ -69,11 +70,10 @@ def main():
         print("❌ No quedaron noticias tras la curación. Abortando sin generar edición.")
         return
 
-    print("3) Enriqueciendo medios (imagen/video del artículo original)...")
-    final_items = enrich_items(final_items)
+    print("3) Enriqueciendo medios (imagen/video del artículo original, respaldo con IA si falta)...")
+    final_items = enrich_items(final_items, date_str)
 
     print("4) Redactando la edición con Claude Opus 5...")
-    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     edition_number = next_edition_number()
     nl = build_newsletter(final_items, edition_number, date_str)
 

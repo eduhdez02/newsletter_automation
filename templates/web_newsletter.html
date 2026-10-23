@@ -178,6 +178,13 @@
   }
   .card-media .no-media svg { width: 28px; height: 28px; opacity: 0.8; }
   .card-media .no-media span { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .photo-credit {
+    position: absolute; right: 8px; bottom: 8px; z-index: 2;
+    font-size: 10px; color: rgba(255,255,255,0.75); text-decoration: none;
+    background: rgba(0,0,0,0.45); padding: 3px 8px; border-radius: 6px;
+    backdrop-filter: blur(2px);
+  }
+  .photo-credit:hover { color: #fff; }
   .card-body { padding: 22px 24px 24px; }
   .card-tag {
     display: inline-block; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.1em;
@@ -292,6 +299,9 @@
           <iframe src="{{ yt }}" title="{{ item.title }}" loading="lazy" allowfullscreen></iframe>
         {% elif item.image_url %}
           <img src="{{ item.image_url }}" alt="" loading="lazy" />
+          {% if item.image_credit_name %}
+            <a class="photo-credit" href="{{ item.image_credit_url }}" target="_blank" rel="noopener noreferrer">Foto: {{ item.image_credit_name }} / Unsplash</a>
+          {% endif %}
         {% else %}
           <div class="no-media">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h2l1.5-2h7L17 5h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><circle cx="12" cy="13" r="3.5"/></svg>

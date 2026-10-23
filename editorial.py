@@ -26,6 +26,8 @@ class NewsItem(BaseModel):
     source_name: str
     source_link: str
     image_url: str | None = None
+    image_credit_name: str | None = None
+    image_credit_url: str | None = None
     video_url: str | None = None
     published: str | None = None
 
@@ -160,6 +162,8 @@ def build_newsletter(final_items: list[dict], edition_number: int, date_str: str
             source_name=_pretty_source_name(domain),
             source_link=raw.get("link", ""),
             image_url=raw.get("image_url"),
+            image_credit_name=raw.get("image_credit_name"),
+            image_credit_url=raw.get("image_credit_url"),
             video_url=raw.get("video_url"),
             published=raw.get("published"),
         )

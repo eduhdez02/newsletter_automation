@@ -66,6 +66,22 @@ def anthropic_client_kwargs() -> dict:
         kwargs["default_headers"] = {"anthropic-workspace-id": ANTHROPIC_WORKSPACE_ID}
     return kwargs
 
+
+# --------------------------------------------------------------------
+# Imagen de respaldo — solo se usa cuando el artículo original no trae
+# og:image. Ver image_gen.py. Orden de prioridad: Unsplash (foto real,
+# gratis) -> Gemini (IA, de paga) -> OpenAI (IA, de paga). Si se dejan
+# todas vacías, esas noticias simplemente se quedan con el placeholder de
+# diseño.
+# --------------------------------------------------------------------
+UNSPLASH_ACCESS_KEY = _env("UNSPLASH_ACCESS_KEY")
+
+GEMINI_API_KEY = _env("GEMINI_API_KEY")
+GEMINI_IMAGE_MODEL = _env("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image")
+
+OPENAI_API_KEY = _env("OPENAI_API_KEY")
+OPENAI_IMAGE_MODEL = _env("OPENAI_IMAGE_MODEL", "gpt-image-1")
+
 # --------------------------------------------------------------------
 # SMTP / correo
 # --------------------------------------------------------------------

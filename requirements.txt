@@ -1,4 +1,6 @@
 anthropic
+openai
+google-genai
 pydantic
 beautifulsoup4
 feedparser
